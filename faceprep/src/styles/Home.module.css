@@ -13,14 +13,14 @@
   
 }
 
-.list {
+.scroll {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.list input {
+.scroll input {
   width: 100%;
   padding: 10px;
   margin: 10px 0;
@@ -28,10 +28,10 @@
   border-radius: 5px;
   outline: none;
 }
-.list input:focus {
+.scroll input:focus {
   border: 1px solid #333;
 }
-.list button {
+.scroll button {
   width: 100%;
   padding: 16.5px 14px;
   margin: 10px 0;
@@ -41,7 +41,7 @@
   color: #ffffff;
 }
 
-.listHeader {
+.scrollHeader {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -49,7 +49,7 @@
   align-items: center;
   gap: 10px;
 }
-.listHeader input {
+.scrollHeader input {
   width: 100%;
   padding: 10px;
   margin: 10px 0;
@@ -68,7 +68,7 @@ button{
     cursor: pointer;
 }
 
-.listBody {
+.scrollBody {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
@@ -76,7 +76,7 @@ button{
   margin-top: 20px;
   row-gap: 15px;
 }
-.listItem {
+.scrollItem {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -88,7 +88,7 @@ button{
   background-color:aqua;
  box-shadow: rgba(214, 3, 73, 0.3) 0px 0px 0px 3px;
 }
-.listItemName {
+.scrollItemName {
   width: 7em;
   height: 7em;
   padding: 0.5em;
@@ -100,30 +100,30 @@ img {
   height: 100%;
   border-radius: 50%;
 }
-.listItem:hover {
+.scrollItem:hover {
   background: rgb(0, 255, 179);
   color:black;
 }
-.listItemNameText,
-.listItemPhone {
+.scrollItemNameText,
+.scrollItemPhone {
   font-weight: 500;
   text-transform: uppercase;
   margin: 0.5em 0 2em 0;
   letter-spacing: 1px;
 }
-.listItemEmail{
+.scrollItemEmail{
     font-weight: 500;
     text-transform: lowercase;
    
     letter-spacing: 1px;
 }
 @media (max-width: 768px) {
-  .listBody {
+  .scrollBody {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (max-width: 480px) {
-  .listBody {
+  .scrollBody {
     grid-template-columns: repeat(1, 1fr);
   }
 }

@@ -61,39 +61,39 @@ const Home = () => {
         Logout
       </button>
 
-      <div className={styles.list}>
-        <div className={styles.listBody}>
+      <div className={styles.scroll}>
+        <div className={styles.scrollBody}>
           {filteredUsers.map((user, index) => {
             if (filteredUsers.length === index + 1) {
               return (
                 <div
-                  className={styles.listItem}
+                  className={styles.scrollItem}
                   key={user.email}
                   ref={lastUserElementRef}
                 >
-                  <div className={styles.listItemName}>
+                  <div className={styles.scrollItemName}>
                     <img src={user.picture.thumbnail} alt="user" />
                   </div>
-                  <div className={styles.listItemNameText}>
+                  <div className={styles.scrollItemNameText}>
                     {user.name.first} {user.name.last}
                   </div>
-                  <div className={styles.listItemEmail}>{user.email}</div>
-                  <div className={styles.listItemPhone}>{user.phone}</div>
+                  <div className={styles.scrollItemEmail}>{user.email}</div>
+                  <div className={styles.scrollItemPhone}>{user.phone}</div>
                 </div>
               );
             } else {
               return (
-                <div className={styles.listItem} key={user.email}>
-                  <div className={styles.listItemName}>
+                <div className={styles.scrollItem} key={user.email}>
+                  <div className={styles.scrollItemName}>
                     <img src={user.picture.thumbnail} alt="user" />
                   </div>
-                  <div className={styles.listItemNameText}>
+                  <div className={styles.scrollItemNameText}>
                     Name: {user.name.first} {user.name.last}
                   </div>
-                  <div className={styles.listItemEmail}>
+                  <div className={styles.scrollItemEmail}>
                     Email: {user.email}
                   </div>
-                  <div className={styles.listItemPhone}>
+                  <div className={styles.scrollItemPhone}>
                     Mobile: {user.phone}
                   </div>
                 </div>
