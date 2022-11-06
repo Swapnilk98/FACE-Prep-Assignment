@@ -1,6 +1,5 @@
 import { render, screen } from "@testing-library/react";
 import Loader from "../components/Loader";
-
 test("loader", () => {
   render(<Loader />);
   const linkElement = screen.getByText(/loader/i);
